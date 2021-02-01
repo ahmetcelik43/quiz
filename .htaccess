@@ -1,0 +1,11 @@
+#gelen tüm istekleri index.php den karşılayalım. 
+RewriteEngine on
+RewriteRule ^$ index.php [QSA,L]
+
+RewriteRule ^login(.*)$ index.php?posta=$1?sifre=$1 [L,QSA]
+
+
+
+
+
+

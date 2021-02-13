@@ -1,8 +1,10 @@
 #gelen tüm istekleri index.php den karşılayalım. 
 RewriteEngine on
-RewriteRule ^$ index.php [QSA,L]
+RewriteRule ^user/$ index.php [QSA,L]
+RewriteRule ^kategori/$ kategori.php [QSA,L]
+RewriteRule ^soru/$ soru.php [QSA,L]
 
-RewriteRule ^login(.*)$ index.php?posta=$1?sifre=$1 [L,QSA]
+#RewriteRule ^login(.*)$ index.php?posta=$1?sifre=$1 [L,QSA]
 
 
 
